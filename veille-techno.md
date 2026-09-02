@@ -33,6 +33,17 @@ Github actions nous permettra d'automatiser :
 
 ## Architecture micro services
 
+![schéma comparatif des styles d'architecture](./docs/img/schema_comparatif_architectures.png)
+> [source developertoarchitect.com](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf) 
 
+L'architecture micro service permet de diviser l'application en composants complètement indépendants.
+Cela permet de :
+- faire évoluer chaque partie de l'application de manière indépendante
+- dimensionner chaque service selon la charge effective ( plusieurs replicas pour les services très utilisés ) = scaling ou mise à l'échelle
+- redonder les services critiques pour améliorer leurs disponibilité
+
+Le plus gros inconvénient est la complexité que l'architecture apporte notamment pour gérer 
+- la communication entre les services
+- le suivi et l'identification des erreurs
 
 
