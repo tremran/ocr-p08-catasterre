@@ -8,6 +8,8 @@ Catasterre est utilisé par des notaires et agences immobilières afin d’éval
 
 Face à l’augmentation du nombre d’utilisateurs et à l’évolution des besoins métier, l’application montre aujourd’hui ses **limites techniques et fonctionnelles**
 
+<div style="page-break-after: always;"></div>
+
 ### Fonctionnalités métiers
 
 Catasterre permet d'accéder à des images satellites traitées pour évaluer les risques associés à des propriétés immobilières. 
@@ -24,6 +26,9 @@ Les problèmes rencontrés sont :
     - difficultés à faire évoluer l’architecture,
     - manque de visibilité sur la roadmap technique,
     - coordination perfectible entre les équipes front-end, back-end et UX.
+
+<div style="page-break-after: always;"></div>
+
 
 ## Réalisation du projet
 
@@ -46,6 +51,8 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 
 #### 
 <!-- Reprendre ici les différentes étapes pour mener à bien le projet. Définir ensuite le système d'affectation des points de complexité, les coûts justifiés et les risques détaillés -->
+
+<div style="page-break-after: always;"></div>
 
 ### Définition des tâches techniques
 
@@ -183,6 +190,8 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
 - Critères de validation 
     - des tests automatisés s'exécutent en local
 
+<div style="page-break-after: always;"></div>
+
 ### Gestion des points de complexité
 
 Les story point prennent en compte la complexité et le volume de la tache
@@ -212,15 +221,17 @@ vélocité estimée : 15 SP
 | #11 | M | 5 | 12.5 |
 | **Total Complet** | - | **42** | **105** |
 
+<div style="page-break-after: always;"></div>
+
 ### Risques identifiés
 
-- probabilité : 
+- Probabilité : 
     1. Très peu probable
     2. Peu probable
     3. Possible
     4. Très probable 
     5. Avéré
-- conséquence :
+- Conséquence :
     1. négligeable
     2. mineure
     3. modérée
@@ -230,7 +241,7 @@ vélocité estimée : 15 SP
 Risque : 
 - `< 10` : acceptable, pas de mitigation à prévoir
 - `< 15` : à observer et à mitiger si une solution simple existe
-- `>= 16` : à mitiger absolument
+- `>= 15` : à mitiger absolument
 
 | Libellé | Probabilité | Conséquences | Risque |
 | --- | --- | --- | --- |
@@ -239,6 +250,8 @@ Risque :
 | Régressions fonctionnelles | 2 | 4 | 8 |
 | Résistance au changement | 2 | 2 | 4 |
 | Dépassement des coûts | 2 | 2 | 4 |
+
+<div style="page-break-after: always;"></div>
 
 ### Détail des risques à mitiger
 
@@ -286,6 +299,8 @@ Après le découpage des tâches le risque sera de 8
 | --- | --- | --- | --- |
 | Répartition de la charge de travail | 2 | 4 | 8 |
 
+<div style="page-break-after: always;"></div>
+
 ### Coûts
 
 <!-- Servez-vous de la description de l’équipe dans le cahier des charges pour déterminer la charge de travail à prévoir pour chaque tâche, afin de pouvoir en déduire les coûts. Détaillez vos calculs dans cet espace, puis complétez le tableau avec vos conclusions. -->
@@ -316,6 +331,8 @@ Version light sans les US 4, 9 et 11
 | #11 | 12.5 | Rachida + Grégory | 500 | 6 250 |
 | **Total** | **109** | ---  | **425** | **47450** |
 
+<div style="page-break-after: always;"></div>
+
 ### Définition des objectifs de performance
 
 <!-- Ajouter ici des objectifs de performance pour montrer la faisabilité quantifiable de la solution. Il est également possible d’ajouter cette section dans la troisième partie. -->
@@ -328,12 +345,15 @@ Périodiquement, les objectifs de performance suivants seront évalués
 | Stabilité | Failed Deployment Recovery Time (ancien MTTR) | < 1j | fin de sprint | non |
 | Qualité | taux de couverture des tests automatisés | > 80% | a chaque merge | oui |
 
+<div style="page-break-after: always;"></div>
+
 ## Planification
 
 Planification par epic, priorité et dépendances des US
 
 ![Planification par epic et par sprint](./docs/img/planif_epic.drawio.png)
 
+<div style="page-break-after: always;"></div>
 
 ## Synthèse
 
