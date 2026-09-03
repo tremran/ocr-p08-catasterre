@@ -6,5 +6,5 @@
 
 - [veille technologique](./veille-techno.md)
 - [sprint back log](https://github.com/users/tremran/projects/2)
-- [proposition commerciale](./proposition-commerciale.md) ou voir le [pdf](./docs/comite-projet_01.pdf)
+- [proposition commerciale](./proposition-commerciale.md) ou voir le [pdf](./docs/proposition-commerciale.md)
 - support comité projet : voir le [pdf](./docs/comite-projet_01.pdf)
