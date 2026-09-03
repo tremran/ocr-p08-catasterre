@@ -49,7 +49,15 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 
 ### Equipe projet
 
-#### 
+#### Membres de l'équipe
+
+| Nom | Poste | Rôle |
+| --- | --- | --- |
+| Rachida | devops, dev back | référente devops |
+| Dimitry | dev front | référente devops |
+| Jorge | UX Designer | référent a11y |
+| Grégory | dev Full-Stack | SCRUM Master |
+
 <!-- Reprendre ici les différentes étapes pour mener à bien le projet. Définir ensuite le système d'affectation des points de complexité, les coûts justifiés et les risques détaillés -->
 
 <div style="page-break-after: always;"></div>
@@ -231,7 +239,7 @@ vélocité estimée : 15 SP
     3. Possible
     4. Très probable 
     5. Avéré
-- Conséquence :
+- Impact :
     1. négligeable
     2. mineure
     3. modérée
@@ -243,7 +251,7 @@ Risque :
 - `< 15` : à observer et à mitiger si une solution simple existe
 - `>= 15` : à mitiger absolument
 
-| Libellé | Probabilité | Conséquences | Risque |
+| Libellé | Probabilité | Impact | Risque |
 | --- | --- | --- | --- |
 | Manque de testeurs qualifiés dans l'équipe | 5 | 4 | 20 |
 | Répartition de la charge de travail | 3 | 4 | 12 |
@@ -355,6 +363,19 @@ Planification par epic, priorité et dépendances des US
 ![Planification par epic et par sprint](./docs/img/planif_epic.drawio.png)
 
 <div style="page-break-after: always;"></div>
+
+## Impact environnemental
+
+L'architecture microservices augmente le nombre de serveurs et leurs consommation par rapport à l'existant.
+
+La conteneurisation génère des images qui peuvent être volumineuses.
+
+Les actions suivantes sont proposées afin de réduire cet impact
+
+| action |  effet |
+| --- | --- |
+| Utilisation des build multistages de Docker | réduction de la taille des images de plus de 50% |
+| Mettre en place l'auto scaling avec le service d'orchestration choisi ( intégré à K8s, ou manuellement avec docker swarm ) | augmentation des services utilisés uniquement lorsque cela est nécessaire |
 
 ## Synthèse
 
