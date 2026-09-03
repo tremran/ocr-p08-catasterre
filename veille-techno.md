@@ -46,4 +46,10 @@ Le plus gros inconvénient est la complexité que l'architecture apporte notamme
 - la communication entre les services
 - le suivi et l'identification des erreurs
 
+## Accessibilité
 
+
+Il existe plusieurs référentiel sur l'accessibilité
+- référentiel mondial : [Web Content Accessibility Guideline](https://www.w3.org/WAI/standards-guidelines/wcag/fr) (WCAG) 
+- référentiel européen : [Accessibility requirements for ICT products and services](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf)
+- référentiel francais : [Référentiel général d'amélioration de l'accessibilité](https://accessibilite.numerique.gouv.fr/) (RGAA)
