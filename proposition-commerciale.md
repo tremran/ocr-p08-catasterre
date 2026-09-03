@@ -343,7 +343,8 @@ Périodiquement, les objectifs de performance suivants seront évalués
 | accessibilité | Score accessibilité lighthouse | > 90 | a chaque merge | non |
 | Stabilité | Change failure rate | < 25% | fin de sprint | non |
 | Stabilité | Failed Deployment Recovery Time (ancien MTTR) | < 1j | fin de sprint | non |
-| Qualité | taux de couverture des tests automatisés | > 80% | a chaque merge | oui |
+| Qualité | taux de couverture des tests automatisés | > 80% | a chaque merge | non |
+| Non regression | réussite de la suite de tests automatisés | réussite | a chaque merge | oui |
 
 <div style="page-break-after: always;"></div>
 
