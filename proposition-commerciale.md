@@ -16,7 +16,7 @@ Catasterre permet d'accéder à des images satellites traitées pour évaluer le
 
 Les problèmes rencontrés sont :
 
-- UX && A11Y
+- UX && A11Y (accessibilité)
     - lenteurs
     - erreurs de style fréquentes et des instabilités
     - mauvaise gestion des messages d'erreur
@@ -31,7 +31,7 @@ Les problèmes rencontrés sont :
 
 
 ## Réalisation du projet
-
+<!-- 
 Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 
 1. lister les fonctionnalités ( = epics )
@@ -45,7 +45,8 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 1. prioriser
     - matrice de décision
 1. planifier
-    - affecter
+    - affecter 
+-->
 
 ### Equipe projet
 
@@ -54,11 +55,9 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 | Nom | Poste | Rôle |
 | --- | --- | --- |
 | Rachida | devops, dev back | référente devops |
-| Dimitry | dev front | référente devops |
+| Dimitry | dev front | référent front |
 | Jorge | UX Designer | référent a11y |
 | Grégory | dev Full-Stack | SCRUM Master |
-
-<!-- Reprendre ici les différentes étapes pour mener à bien le projet. Définir ensuite le système d'affectation des points de complexité, les coûts justifiés et les risques détaillés -->
 
 <div style="page-break-after: always;"></div>
 
@@ -68,28 +67,28 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 
 | Epic | Description |
 | --- | --- | 
-| UX - Amélioration interface utilisateur | Correction des erreurs fréquentes, amélioration de l'UX |
-| Migration - Garantir la disponibilité et améliorer la maintenabilité et l'évolutivité | Migration vers une architecture microservice dockerisée  |
-| Qualité - Fiabiliser l’organisation du développement | Création d'une pipeline CI et ajout de tests automatisés |
-| Performance - Amélioration des performances | Amélioration des performances sur des fonctionnalités critiques |
+| Correction | Correction des erreurs fréquentes, amélioration de l'accessibilité |
+| Modernisation | Création d'une pipeline ci/cd et tests |
+| Migration | Migration vers une architecture microservice dockerisée  |
+| Optimisations | Amélioration des performances sur des fonctionnalités critiques + création d'un nouveau thème |
 
-#### Description des US
+#### Description des US (User stories)
 
 Liste des US
 
 | # | Nom  | Epic associée |
 | --- | --- | --- |
-| 1 | Amélioration du style CSS | UX |
-| 2 | Meilleure gestion des messages d’erreur | UX |
-| 3 | Améliorer l’accessibilite (A11Y) | UX |
-| 4 | Créer un nouveau theme | UX |
-| 5 | Encapsuler l’application | Migration |
+| 1 | Amélioration du style CSS | Correction |
+| 2 | Meilleure gestion des messages d’erreur | Correction |
+| 3 | Améliorer l’accessibilite (A11Y) | Correction |
+| 4 | Créer un nouveau theme | Optimisations |
+| 5 | Encapsuler l’application | Modernisation |
 | 6 | Implémentation d’une architecture en micro-services. | Migration |
-| 7 | Créer une pipeline d’integration continue | Qualité |
-| 8 | Mise en place d’un environnement de test | Qualité |
-| 9 | Améliorer le calcul du risque d’inondation | Performance |
-| 10 | Problème de compatibilite avec les navigateurs | UX |
-| 11 | Améliorer l'exportation des données | Performance |
+| 7 | Créer une pipeline d’integration continue | Modernisation |
+| 8 | Mise en place d’un environnement de test | Modernisation |
+| 9 | Améliorer le calcul du risque d’inondation | Optimisations |
+| 10 | Problème de compatibilite avec les navigateurs | Correction |
+| 11 | Améliorer l'exportation des données | Optimisations |
 
 #### Détails des US par Epic
 
@@ -97,7 +96,7 @@ Détermination de la compléxité, de la priorité et critères de validation
 
 Ces informations sont reportés dans le [Epic board](https://github.com/users/tremran/projects/2/views/6?groupedBy%5BcolumnId%5D=406475535) sur github
 
-##### Epic `UX`
+##### Epic `Correction`
 
 ###### #1 Amélioration du style CSS
 
@@ -124,14 +123,6 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
 - Critères de validation 
     - Score lighthouse accessibilité sur mobile et desktop > 95
 
-###### #4 Créer un nouveau thème
-
-- lien de l'issue : https://github.com/tremran/ocr-p08-catasterre/issues/4
-- Complexité : Large
-- Priorité : Moyenne
-- Critères de validation 
-    - Score lighthouse accessibilité sur mobile et desktop > 95
-
 ###### #10 Problème de compatibilité avec les navigateurs
 
 - lien de l'issue : https://github.com/tremran/ocr-p08-catasterre/issues/10
@@ -143,7 +134,7 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
         - Firefox
         - Opéra
 
-##### Epic `Migration`
+##### Epic `Modernisation`
 
 ###### #5 Encapsuler l'application
 
@@ -152,16 +143,6 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
 - Priorité : Haute
 - Critères de validation 
     - l'application s'exécute dans un container
-
-###### #6 Implémentation d'une architecture en microservice
-
-- lien de l'issue : https://github.com/tremran/ocr-p08-catasterre/issues/6
-- Complexité : Extra Large
-- Priorité : Moyenne
-- Critères de validation 
-    - l'application est composé d'au moins deux services distincts
-
-##### Epic `Qualité`
 
 ###### #7 Créer une pipeline d'intégration continue
 
@@ -180,7 +161,18 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
 - Critères de validation 
     - des tests automatisés s'exécutent en local
 
-##### Epic `Performance`
+##### Epic `Migration`
+
+###### #6 Implémentation d'une architecture en microservice
+
+- lien de l'issue : https://github.com/tremran/ocr-p08-catasterre/issues/6
+- Complexité : Extra Large
+- Priorité : Moyenne
+- Critères de validation 
+    - l'application est composé d'au moins deux services distincts
+
+
+##### Epic `Optimisations`
 
 ###### #9 Améliorer le calcul du risque d'inondation
 
@@ -198,18 +190,27 @@ Ces informations sont reportés dans le [Epic board](https://github.com/users/tr
 - Critères de validation 
     - des tests automatisés s'exécutent en local
 
+###### #4 Créer un nouveau thème
+
+- lien de l'issue : https://github.com/tremran/ocr-p08-catasterre/issues/4
+- Complexité : Large
+- Priorité : Moyenne
+- Critères de validation 
+    - Score lighthouse accessibilité sur mobile et desktop > 95
+
 <div style="page-break-after: always;"></div>
 
 ### Gestion des points de complexité
 
 Les story point prennent en compte la complexité et le volume de la tache
 
-temps disponible par sprint : 38 jour homme
-vélocité estimée : 15 SP
+- temps disponible par sprint : 38 jour homme
+- vélocité estimée : 15 SP
     - Dimitry : 3 SP
     - Rachida : 4 SP
     - Jorge : 4 SP
     - Grégory 4 SP
+
 1SP ≈ 2.5 j-h
 > Remarque : 3 SP pour Dimitry dans le cadre de l'aménagement de son temps de travail pour son TDAH
 
@@ -218,14 +219,13 @@ vélocité estimée : 15 SP
 | #1 | S | 2 | 5 |
 | #2 | S | 2 | 5 |
 | #3 | S | 3 | 7.5 |
-| #10 | S | 2 | 5 |
+| #4 | L | 3 | 7.5 |
 | #5 | S | 2 | 5 |
 | #6 | XL | 8 | 20 |
 | #7 | M | 5 | 12.5 |
 | #8 | M | 4 | 10 |
-| **Total Light** | - | **28** | **70** |
-| #4 | L | 3 | 7.5 |
 | #9 | M | 6 | 15 |
+| #10 | S | 2 | 5 |
 | #11 | M | 5 | 12.5 |
 | **Total Complet** | - | **42** | **105** |
 
@@ -286,11 +286,11 @@ Après la formation le risque sera de 4
 | --- | --- | --- | --- |
 | Manque de testeurs qualifiés dans l'équipe | 1 | 4 | 4 |
 
-Les User Stories ont été ajoutées au backlog
+Les User Stories ont été ajoutées au backlog dans l'epic `Modernisation`
 
 #### Répartition de la charge de travail
 
-Probabilité : 3 la première ventilation des taches semble etre disproportionné, beaucoup concernent l'UX et peu l'accessibilité
+Probabilité : 3 la première ventilation des tâches semble être disproportionnée, beaucoup concernent l'UX et peu l'accessibilité et 4 tâches sont estimées à 5 SP ou plus.
 
 Conséquence : allongement des délais de livraison
 
@@ -311,7 +311,8 @@ Après le découpage des tâches le risque sera de 8
 
 ### Coûts
 
-<!-- Servez-vous de la description de l’équipe dans le cahier des charges pour déterminer la charge de travail à prévoir pour chaque tâche, afin de pouvoir en déduire les coûts. Détaillez vos calculs dans cet espace, puis complétez le tableau avec vos conclusions. -->
+Les coûts seront étudiés par epics.
+
 Les TJM par personne :
 
 - Dimitry : 300 €
@@ -319,27 +320,72 @@ Les TJM par personne :
 - Jorge : 300 €
 - Grégory : 500 €
 
-Version light sans les US 4, 9 et 11
+#### Coûts epic `Corrections`
 
 | Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
 | --- | --- | --- | --- | --- | 
 | #1 | 5 | Dimitry + Jorge | 300 | 1 500 | 
 | #2 | 5 | Grégory + Jorge | 400 | 2 000 | 
 | #3 | 7.5 | Dimitry + Jorge | 300 | 2 250 | 
-| #10 | 5 | Dimitry | 300 | 1 500 | 
-| #5 | 5 | Rachida | 500 | 2 500 | 
-| #6 | 20 | Rachida + Grégory | 500 | 10 000 | 
-| #7 | 12.5 | Rachida + Grégory | 500 | 6 250 | 
-| #8 | 10 | Rachida + Dimitry | 400 | 4 000 | 
+| #10 | 5 | Dimitry | 300 | 1 500 |
+| **Total** | **22.5** | ---  | **322** | **7 250** |
+
+#### Coûts epic `Modernisation`
+
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
+| --- | --- | --- | --- | --- | 
 | #12 | 2.5 | Dimitry | 300 | 700 |
 | #13 | 1.5 | Rachida  | 500 | 750 |
-| **Total light** | **74** | ---  | **425** | **31 450** |
+| #5 | 5 | Rachida | 500 | 2 500 | 
+| #7 | 12.5 | Rachida + Grégory | 500 | 6 250 | 
+| #8 | 10 | Rachida + Dimitry | 400 | 4 000 | 
+| **Total** | **31.5** | ---  | **450** | **14 200** |
+
+#### Coûts epic `Migration`
+
+> Nécessite l'epic `Modernisation`
+
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
+| --- | --- | --- | --- | --- | 
+| #6 | 20 | Rachida + Grégory | 500 | 10 000 | 
+| **Total** | **20** | ---  | **500** | **10 000** |
+
+#### Coûts epic `Optimisations`
+
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
+| --- | --- | --- | --- | --- | 
 | #4 | 7.5 | Dimitry + Jorge | 300 | 2 250 |
 | #9 | 15 | Grégory | 500 | 7 500 |
 | #11 | 12.5 | Rachida + Grégory | 500 | 6 250 |
-| **Total** | **109** | ---  | **425** | **47450** |
+| **Total** | **35** | ---  | **425** | **16 000** |
+
+#### Résumé des coûts par epic
+
+| Epic | Temps (j-h) | TJM (€) | Total (€)| 
+| --- | --- | --- |  --- | 
+| Corrections   | 22.5| 322 | 7 250  |
+| Modernisation | 31.5| 450 | 14 200 |
+| Migration     | 20  | 500 | 10 000 |
+| Optimisations | 35  | 425 | 16 000 |
+| **Total**     | 311.5 | 152 | 47450 |
+
+> L'epic `Migration` nécessite l'epic `Modernisation`
 
 <div style="page-break-after: always;"></div>
+
+### Propositions
+
+| Proposition | Contenu | Coût(€) | Durée |
+| --- | --- | --- | --- |
+| Proposition 1 | epics `Corrections` et `Modernisation` | 21 450 | 4 semaines |
+| Proposition 2 | Proposition 1 +  `Migration` et `Optimisations` | 47 450 | 8 semaines |
+
+#### Planification
+
+![Planification par epic et par sprint](./docs/img/planif_epic_2.drawio.png)
+
+<div style="page-break-after: always;"></div>
+
 
 ### Définition des objectifs de performance
 
@@ -353,14 +399,6 @@ Périodiquement, les objectifs de performance suivants seront évalués
 | Stabilité | Failed Deployment Recovery Time (ancien MTTR) | < 1j | fin de sprint | non |
 | Qualité | taux de couverture des tests automatisés | > 80% | a chaque merge | non |
 | Non regression | réussite de la suite de tests automatisés | réussite | a chaque merge | oui |
-
-<div style="page-break-after: always;"></div>
-
-## Planification
-
-Planification par epic, priorité et dépendances des US
-
-![Planification par epic et par sprint](./docs/img/planif_epic.drawio.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -380,41 +418,15 @@ Les actions suivantes sont proposées afin de réduire cet impact
 ## Synthèse
 
 2 propositions ont été étudiées. 
-3 sprints sont prévus :
+4 sprints sont prévus  :
 
-- Sprint 1 : Fondation
-    - Epic `UX`
-        - US2 - Meilleure gestion des messages d'erreurs 
-        - US10 - Problème de compatibilité avec les navigateurs
-    - Epic `Migration`
-        - US5 - Encapsuler l'application
-        - US14 - Implémentation d'une architecture en microservice - partie 1
-    - Epic `Qualité`
-        - US12 - Formation tests automatisés Front
-        - US13 - Formation tests automatisés Back
-        - US8 - Mise en place d'un environnement de test
-- Sprint 2 : Accessibilité
-    - Epic `UX`
-        - US1 - Amélioration du style CSS
-        - US3 - Améliorer l'accessibilité
-    - Epic `Migration`
-        - US6 - Implémentation d'une architecture en microservice - partie 2
-    - Epic `Qualité`
-        - US7 - Créer une pipeline d'intégration continue
-- Sprint 3 : Performance
-    - Epic `UX`
-        - US4 - Créer un nouveau thème
-    - Epic `Performance`
-        - US9 - Améliorer le calcul du risque d'inondation
-        - US11 - Améliorer l'exportaion des données
+### Proposition périmètre réduit
 
-### Version light
+La version light comprends les epics `Corrections` et `Modernisation`
 
-La version light comprends les sprint 1 `Fondation` et 2 `Accessibilité`
+Le coût est estimé à 21 450€ en 4 semaines.
 
-Le coût est estimé à 31 450€ en 4 semaines.
+### Proposition périmètre complet
 
-### Version complète
-
-La version complète ajoute le sprint 3 pour une estimation de 47 450€ en 6 semaines.
+La version complète ajoute les epics `Migration` et `Optimisations` pour une estimation de 47 450€ en 8 semaines.
 

@@ -1,4 +1,4 @@
-# ADR-XXXX : Question pour un problème à résoudre
+# ADR-0002 : Quelle plate forme de CI/CD utiliser
 
 ## Statut
 
