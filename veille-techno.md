@@ -4,7 +4,7 @@
 
 Le cahier des charges indique qu'il faut "encapsuler l'application dans un container docker afin de "garantir la disponibilité et améliorer la maintenabilité et l'évolutivité
 
-voir [ADR0001 Choix du moteur de conteneurisation](./docs/adr/0001-choix-techno-pour-conteneuriser.md) correspondante.
+voir [ADR0001 Choix du moteur de conteneurisation](https://github.com/tremran/ocr-p08-catasterre/tree/main/docs/adr/0001-choix-techno-pour-conteneuriser.md) correspondante.
 
 ### Résumé Docker
 
@@ -23,7 +23,7 @@ Docker swarm permettra d'orchestrer les containers afin d'augmenter la disponibi
 
 Le cahier des charges indique qu'il faut mettre en place une pipeline d'intégration continue afin de "fiabiliser l'organisation du développement"
 
-voir [ADR0002 Choix de la plateforme CI/CD](./docs/adr/0002-choix-plateforme-pour-pipeline-ci.md) correspondante.
+voir [ADR0002 Choix de la plateforme CI/CD](https://github.com/tremran/ocr-p08-catasterre/tree/main/docs/adr/0002-choix-plateforme-pour-pipeline-ci.md) correspondante.
 
 Github actions nous permettra d'automatiser :
 - l'exécution des tests automatisés

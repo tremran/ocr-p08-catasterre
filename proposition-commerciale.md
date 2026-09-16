@@ -251,7 +251,7 @@ Risque :
 - `< 15` : à observer et à mitiger si une solution simple existe
 - `>= 15` : à mitiger absolument
 
-| Libellé | Probabilité | Impact | Risque |
+| Menace | Probabilité | Impact | Risque |
 | --- | --- | --- | --- |
 | Manque de testeurs qualifiés dans l'équipe | 5 | 4 | 20 |
 | Répartition de la charge de travail | 3 | 4 | 12 |
@@ -282,7 +282,7 @@ Solution proposée : Plan de formation
 
 Après la formation le risque sera de 4
 
-| Libellé | Probabilité | Conséquences | Risque |
+| Menace | Probabilité | Conséquences | Risque |
 | --- | --- | --- | --- |
 | Manque de testeurs qualifiés dans l'équipe | 1 | 4 | 4 |
 
@@ -303,7 +303,7 @@ Solution proposée :
 
 Après le découpage des tâches le risque sera de 8
 
-| Libellé | Probabilité | Conséquences | Risque |
+| Menace | Probabilité | Conséquences | Risque |
 | --- | --- | --- | --- |
 | Répartition de la charge de travail | 2 | 4 | 8 |
 
