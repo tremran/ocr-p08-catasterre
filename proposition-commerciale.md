@@ -59,6 +59,16 @@ Afin de mener à bien ce projet nous allons réaliser les étapes suivantes :
 | Jorge | UX Designer | référent a11y |
 | Grégory | dev Full-Stack | SCRUM Master |
 
+#### Tableau des compétences
+
+| Compétence | Dimitry | Rachida | Jorge | Moyenne | Action |
+| --- | --- | --- | --- | --- | --- |
+| Tests auto Front | 0 | 0 | 0 | 0 | Plan de formation externe |
+| Tests auto Back | 0 | 0 | 0 | 0 | Plan de formation externe |
+| TDD | 0 | 3 | 0 | 1 | Plan de formation externe |
+| DevOps | 0 | 5 | 0 | 1.7 | Plan de formation interne |
+| Accessibilité | 3 | 0 | 5 | 2.6 | Partage de connaissance |
+
 <div style="page-break-after: always;"></div>
 
 ### Définition des tâches techniques
@@ -254,6 +264,7 @@ Risque :
 | Menace | Probabilité | Impact | Risque |
 | --- | --- | --- | --- |
 | Manque de testeurs qualifiés dans l'équipe | 5 | 4 | 20 |
+| Porteuse unique de savoir (Devops Rachida)| 5 | 4 | 20 |
 | Répartition de la charge de travail | 3 | 4 | 12 |
 | Régressions fonctionnelles | 2 | 4 | 8 |
 | Résistance au changement | 2 | 2 | 4 |
@@ -288,6 +299,30 @@ Après la formation le risque sera de 4
 
 Les User Stories ont été ajoutées au backlog dans l'epic `Modernisation`
 
+#### Porteuse unique de savoir
+
+Probabilité : Le risque est avéré 
+
+Conséquence : Retard dans les développement
+
+Solution proposée : Sessions de formations internes menés par Rachida aux membres de l'équipe
+
+##### Plan de formation
+
+| id | Formation | Personnes concernés | Modalité | Remarques |
+| --- | --- | --- | --- | --- |
+| 15 | formation DevOps | Dimitry + Jorge | Réalisé par Rachida, 2j-h de formation  | Formation mené par Rachida à planifier au plus tôt |
+
+##### Résultats attendus
+
+Après la formation le risque sera de 4
+
+| Menace | Probabilité | Conséquences | Risque |
+| --- | --- | --- | --- |
+| Porteuse unique de savoir (Devops Rachida) | 2 | 4 | 8 |
+
+La User Story a été ajoutée au backlog dans l'epic `Modernisation`
+
 #### Répartition de la charge de travail
 
 Probabilité : 3 la première ventilation des tâches semble être disproportionnée, beaucoup concernent l'UX et peu l'accessibilité et 4 tâches sont estimées à 5 SP ou plus.
@@ -313,6 +348,8 @@ Après le découpage des tâches le risque sera de 8
 
 Les coûts seront étudiés par epics.
 
+Une marge de **15%** est appliquée sur le coût interne (TJM) de chaque epic afin de couvrir les frais généraux, les aléas du projet et de dégager un profit.
+
 Les TJM par personne :
 
 - Dimitry : 300 €
@@ -322,52 +359,52 @@ Les TJM par personne :
 
 #### Coûts epic `Corrections`
 
-| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
-| --- | --- | --- | --- | --- | 
-| #1 | 5 | Dimitry + Jorge | 300 | 1 500 | 
-| #2 | 5 | Grégory + Jorge | 400 | 2 000 | 
-| #3 | 7.5 | Dimitry + Jorge | 300 | 2 250 | 
-| #10 | 5 | Dimitry | 300 | 1 500 |
-| **Total** | **22.5** | ---  | **322** | **7 250** |
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€) | Marge 15% (€) | Prix de vente (€) |
+| --- | --- | --- | --- | --- | --- | --- |
+| #1 | 5 | Dimitry + Jorge | 300 | 1 500 | 225,00 | 1 725,00 |
+| #2 | 5 | Grégory + Jorge | 400 | 2 000 | 300,00 | 2 300,00 |
+| #3 | 7.5 | Dimitry + Jorge | 300 | 2 250 | 337,50 | 2 587,50 |
+| #10 | 5 | Dimitry | 300 | 1 500 | 225,00 | 1 725,00 |
+| **Total** | **22.5** | ---  | **322** | **7 250** | **1 087,50** | **8 337,50** |
 
 #### Coûts epic `Modernisation`
 
-| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
-| --- | --- | --- | --- | --- | 
-| #12 | 2.5 | Dimitry | 300 | 700 |
-| #13 | 1.5 | Rachida  | 500 | 750 |
-| #5 | 5 | Rachida | 500 | 2 500 | 
-| #7 | 12.5 | Rachida + Grégory | 500 | 6 250 | 
-| #8 | 10 | Rachida + Dimitry | 400 | 4 000 | 
-| **Total** | **31.5** | ---  | **450** | **14 200** |
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€) | Marge 15% (€) | Prix de vente (€) |
+| --- | --- | --- | --- | --- | --- | --- |
+| #12 | 2.5 | Dimitry | 300 | 700 | 105,00 | 805,00 |
+| #13 | 1.5 | Rachida  | 500 | 750 | 112,50 | 862,50 |
+| #5 | 5 | Rachida | 500 | 2 500 | 375,00 | 2 875,00 |
+| #7 | 12.5 | Rachida + Grégory | 500 | 6 250 | 937,50 | 7 187,50 |
+| #8 | 10 | Rachida + Dimitry | 400 | 4 000 | 600,00 | 4 600,00 |
+| **Total** | **31.5** | ---  | **450** | **14 200** | **2 130,00** | **16 330,00** |
 
 #### Coûts epic `Migration`
 
 > Nécessite l'epic `Modernisation`
 
-| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
-| --- | --- | --- | --- | --- | 
-| #6 | 20 | Rachida + Grégory | 500 | 10 000 | 
-| **Total** | **20** | ---  | **500** | **10 000** |
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€) | Marge 15% (€) | Prix de vente (€) |
+| --- | --- | --- | --- | --- | --- | --- |
+| #6 | 20 | Rachida + Grégory | 500 | 10 000 | 1 500,00 | 11 500,00 |
+| **Total** | **20** | ---  | **500** | **10 000** | **1 500,00** | **11 500,00** |
 
 #### Coûts epic `Optimisations`
 
-| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€)| 
-| --- | --- | --- | --- | --- | 
-| #4 | 7.5 | Dimitry + Jorge | 300 | 2 250 |
-| #9 | 15 | Grégory | 500 | 7 500 |
-| #11 | 12.5 | Rachida + Grégory | 500 | 6 250 |
-| **Total** | **35** | ---  | **425** | **16 000** |
+| Tâche | Temps (j-h) | Membre de l’équipe | TJM (€) | Total (€) | Marge 15% (€) | Prix de vente (€) |
+| --- | --- | --- | --- | --- | --- | --- |
+| #4 | 7.5 | Dimitry + Jorge | 300 | 2 250 | 337,50 | 2 587,50 |
+| #9 | 15 | Grégory | 500 | 7 500 | 1 125,00 | 8 625,00 |
+| #11 | 12.5 | Rachida + Grégory | 500 | 6 250 | 937,50 | 7 187,50 |
+| **Total** | **35** | ---  | **425** | **16 000** | **2 400,00** | **18 400,00** |
 
 #### Résumé des coûts par epic
 
-| Epic | Temps (j-h) | TJM (€) | Total (€)| 
-| --- | --- | --- |  --- | 
-| Corrections   | 22.5| 322 | 7 250  |
-| Modernisation | 31.5| 450 | 14 200 |
-| Migration     | 20  | 500 | 10 000 |
-| Optimisations | 35  | 425 | 16 000 |
-| **Total**     | 311.5 | 152 | 47450 |
+| Epic | Temps (j-h) | TJM (€) | Total (€) | Marge 15% (€) | Prix de vente (€) |
+| --- | --- | --- | --- | --- | --- |
+| Corrections   | 22.5  | 322 | 7 250  | 1 087,50 | 8 337,50  |
+| Modernisation | 31.5  | 450 | 14 200 | 2 130,00 | 16 330,00 |
+| Migration     | 20    | 500 | 10 000 | 1 500,00 | 11 500,00 |
+| Optimisations | 35    | 425 | 16 000 | 2 400,00 | 18 400,00 |
+| **Total**     | **109** | **435** | **47 450** | **7 117,50** | **54 567,50** |
 
 > L'epic `Migration` nécessite l'epic `Modernisation`
 
@@ -375,10 +412,10 @@ Les TJM par personne :
 
 ### Propositions
 
-| Proposition | Contenu | Coût(€) | Durée |
-| --- | --- | --- | --- |
-| Proposition 1 | epics `Corrections` et `Modernisation` | 21 450 | 4 semaines |
-| Proposition 2 | Proposition 1 +  `Migration` et `Optimisations` | 47 450 | 8 semaines |
+| Proposition | Contenu | Coût interne (€) | Prix de vente (€) | Durée |
+| --- | --- | --- | --- | --- |
+| Proposition 1 | epics `Corrections` et `Modernisation` | 21 450 | 24 667,50 | 4 semaines |
+| Proposition 2 | Proposition 1 +  `Migration` et `Optimisations` | 47 450 | 54 567,50 | 8 semaines |
 
 #### Planification
 
@@ -424,9 +461,9 @@ Les actions suivantes sont proposées afin de réduire cet impact
 
 La version light comprends les epics `Corrections` et `Modernisation`
 
-Le coût est estimé à 21 450€ en 4 semaines.
+Le coût est estimé à 24 667,50€ en 4 semaines.
 
 ### Proposition périmètre complet
 
-La version complète ajoute les epics `Migration` et `Optimisations` pour une estimation de 47 450€ en 8 semaines.
+La version complète ajoute les epics `Migration` et `Optimisations` pour une estimation de 54 567,50€ en 8 semaines.
 
